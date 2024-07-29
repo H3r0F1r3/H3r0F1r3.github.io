@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="752"
+   height="161"
+   viewBox="0 0 752 161"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="376.24802"
+       y="41.376839"
+       width="181.58066"
+       height="109.85523"
+       id="rect2" />
+  </defs>
+  <path
+     d="M 725,4 H 4 V 157 H 725 L 593.04,76.5 Z"
+     fill="#ffd643"
+     stroke="#000000"
+     stroke-width="7"
+     id="path1" />
+  <text
+     xml:space="preserve"
+     id="text2"
+     style="font-size:90px;font-family:anton;-inkscape-font-specification:anton;white-space:pre;shape-inside:url(#rect2);fill:#000000"
+     transform="translate(0,-4)"><tspan
+       x="376.24805"
+       y="122.95131"
+       id="tspan2">ROCK</tspan></text>
+</svg>

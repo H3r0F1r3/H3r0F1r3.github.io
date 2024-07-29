@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>ROCK PAPER SCISSORS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Color+Emoji&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main_section">
+            <div class="choice_section">
+                <svg class="choice_flags" width="116.7701863354%" height="25%" viewBox="0 0 752 161" fill="none" version="1.1" id="rock_flag_svg" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="M 725,4 H 4 V 157 H 725 L 593.04,76.5 Z" fill="#ffd643" stroke="#000000" stroke-width="7" id="path1" />
+                    <text xml:space="preserve" id="text2" style="font-size:90px;font-family:anton;-inkscape-font-specification:anton;white-space:pre;shape-inside:url(#rect2);fill:#000000" transform="translate(0,-4)">
+                        <tspan x="376.24805" y="122.95131" id="tspan2">ROCK</tspan></text>
+                </svg>
+                <svg class="choice_flags" width="108.07453416149%" height="25%" viewBox="0 0 696 161" fill="none" version="1.1" id="paper_flag_svg" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="M 683,4 H 4 V 157 H 683 L 558.727,76.5 Z" fill="#ff5943" stroke="#000000" stroke-width="7" id="path1" />
+                    <text xml:space="preserve" id="text2" style="font-size:90px;font-family:anton;-inkscape-font-specification:anton;white-space:pre;shape-inside:url(#rect2);fill:#000000" transform="translate(38,14)">
+                        <tspan x="270.73633" y="105.62709" id="tspan1">PAPER</tspan></text>
+                </svg>
+                <svg class="choice_flags" width="128.72670807453%" height="25%" viewBox="0 0 829 161" fill="none" version="1.1" id="scissors_flag_svg" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <path d="M 827,4 H 4 V 157 H 827 L 676.371,76.5 Z" fill="#43bbff" stroke="#000000" stroke-width="7" id="path1" />
+                    <text xml:space="preserve" id="text2" style="font-size:90px;font-family:Anton;-inkscape-font-specification:anton;white-space:pre;shape-inside:url(#rect2);fill:#000000" transform="translate(-2.1476102,-1.5317405)">
+                        <tspan x="325.30859" y="121.93764" id="tspan2">SCISSORS</tspan></text>
+                </svg>
+            </div>
+            <div class="game_section">
+                <div id="user_move"></div>
+                <div id="bot_move"></div>
+            </div>
+        </div>
+        <div class="victory_points">
+            <svg class="victory_point" width="18%" height="70%" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M119 11.3262L143.736 87.4544L144.521 89.8729H147.064H227.11L162.352 136.923L160.294 138.417L161.08 140.836L185.816 216.964L121.057 169.914L119 168.42L116.943 169.914L52.1842 216.964L76.9198 140.836L77.7056 138.417L75.6483 136.923L10.8898 89.8729H90.9358H93.4787L94.2645 87.4544L119 11.3262Z" fill="#D9D9D9" stroke="black" stroke-width="7"/>
+            </svg>
+            <svg class="victory_point" width="18%" height="70%" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M119 11.3262L143.736 87.4544L144.521 89.8729H147.064H227.11L162.352 136.923L160.294 138.417L161.08 140.836L185.816 216.964L121.057 169.914L119 168.42L116.943 169.914L52.1842 216.964L76.9198 140.836L77.7056 138.417L75.6483 136.923L10.8898 89.8729H90.9358H93.4787L94.2645 87.4544L119 11.3262Z" fill="#D9D9D9" stroke="black" stroke-width="7"/>
+            </svg>
+            <svg class="victory_point" width="18%" height="70%" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M119 11.3262L143.736 87.4544L144.521 89.8729H147.064H227.11L162.352 136.923L160.294 138.417L161.08 140.836L185.816 216.964L121.057 169.914L119 168.42L116.943 169.914L52.1842 216.964L76.9198 140.836L77.7056 138.417L75.6483 136.923L10.8898 89.8729H90.9358H93.4787L94.2645 87.4544L119 11.3262Z" fill="#D9D9D9" stroke="black" stroke-width="7"/>
+            </svg>
+            <svg class="victory_point" width="18%" height="70%" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M119 11.3262L143.736 87.4544L144.521 89.8729H147.064H227.11L162.352 136.923L160.294 138.417L161.08 140.836L185.816 216.964L121.057 169.914L119 168.42L116.943 169.914L52.1842 216.964L76.9198 140.836L77.7056 138.417L75.6483 136.923L10.8898 89.8729H90.9358H93.4787L94.2645 87.4544L119 11.3262Z" fill="#D9D9D9" stroke="black" stroke-width="7"/>
+            </svg>
+            <svg class="victory_point" width="18%" height="70%" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M119 11.3262L143.736 87.4544L144.521 89.8729H147.064H227.11L162.352 136.923L160.294 138.417L161.08 140.836L185.816 216.964L121.057 169.914L119 168.42L116.943 169.914L52.1842 216.964L76.9198 140.836L77.7056 138.417L75.6483 136.923L10.8898 89.8729H90.9358H93.4787L94.2645 87.4544L119 11.3262Z" fill="#D9D9D9" stroke="black" stroke-width="7"/>
+            </svg>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f0ea;
+    display: flex;
+    flex-direction: column;
+    font-family: anton;
+    flex: 1;
+}
+
+.main_section {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+.choice_section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    user-select: none;
+}
+
+.choice_flags {
+    transition: 0.3s;
+}
+
+#rock_flag_svg {
+    transform: translate(-40%);
+}
+#rock_flag_svg:hover {
+    transform: translate(-25%)
+}
+
+
+#paper_flag_svg {
+    transform: translate(-33.5%);
+}
+#paper_flag_svg:hover {
+    transform: translate(-18.5%)
+}
+
+#scissors_flag_svg {
+    transform: translate(-30%);
+}
+#scissors_flag_svg:hover {
+    transform: translate(-15%)
+}
+
+.game_section {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+}
+
+#user_move {
+    user-select: none;
+    text-align: center;
+    font-size: 140px;
+    transform: translateX(14%) rotate(45deg) scaleX(-1) ;
+    transition: 0.3s;
+    flex: 1;
+}
+
+#bot_move {
+    user-select: none;
+    text-align: center;
+    font-size: 140px;
+    transform: translateX(-14%) rotate(-45deg);
+    transition: 0.3s;
+    flex: 1;
+}
+
+.victory_points {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes user_animation {
+    O% {transform: translateX(14%) rotate(45deg) scaleX(-1);}
+    45% {transform: rotate(30deg) translateX(-10%) translateY(-50%) scaleX(-1);}
+    55% {transform: rotate(30deg) translateX(-10%) translateY(-50%) scaleX(-1);}
+    10O% {transform: translateX(14%) rotate(45deg) scaleX(-1);}
+}
+
+@keyframes bot_animation {
+    O% {transform: translateX(-14%) rotate(-45deg)}
+    45% {transform: rotate(-30deg) translateX(10%) translateY(-50%);}
+    55% {transform: rotate(-30deg) translateX(10%) translateY(-50%);}
+    10O% {transform: translateX(-14%) rotate(-45deg)}
+}

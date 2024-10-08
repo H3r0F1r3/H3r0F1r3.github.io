@@ -65,7 +65,8 @@ function updateWinCount(userWinCount, botWinCount) {
   let victory_points = document.querySelectorAll(".victory_point");
   victory_points.forEach((element) => {element.querySelector("path").setAttribute("fill", "#d9d9d9")})
   if ((userWinCount + botWinCount) > 5) {
-    console.error("win count exceeds limit")
+    userWinCount = 0;
+    botWinCount = 0;
     return;
   }
   let pos = 0;
